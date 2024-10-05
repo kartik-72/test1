@@ -1,0 +1,345 @@
+html,
+body {
+    background-color: #1b1b1b;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* HEADER CSS STARTS HERE */
+
+header {
+    background-color: #222428;
+    top: 0;
+    position: sticky;
+    z-index: 200;
+}
+
+.header-cont {
+    display: flex;
+    padding: 10px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header a {
+    display: inline-block;
+    /* margin-right: 27px; */
+}
+
+.humburger-menu .svg_color {
+    fill: #fff;
+}
+
+.hamburger-menu,
+.logo,
+.search-input {
+    margin-right: 27px;
+}
+
+.logo svg {
+    width: 100px;
+    height: 26px;
+    margin-top: 8 px;
+}
+
+.header-btn {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 10px;
+    padding: 9px 20px 7px;
+    border-radius: 20px;
+    margin-right: 27px;
+}
+
+
+.search-input {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    max-width: 500px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    flex: 1;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #1b1b1b;
+    border: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.search-input svg {
+    margin: 0 4px;
+}
+
+.search-input .svg_color {
+    fill: #8e8e93;
+}
+
+.search-input input {
+    outline: none;
+    color: #8e8e93;
+    border: none;
+    background-color: transparent;
+}
+
+.login-cta {
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, .75);
+    text-decoration: none;
+}
+
+/* HEADER CSS ENDS HERE */
+
+
+/* Navigation CSS Starts here */
+
+.navigation-bar {
+    top: 60px;
+    position: sticky;
+    z-index: 200;
+    min-height: 60px;
+    background-color: #1b1b1b;
+}
+
+.nav-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 30px;
+    letter-spacing: -.09px;
+    line-height: 20px;
+    /* padding: 30px; */
+}
+
+/* NAVIGATION SECTION ENDS HERE */
+
+
+/* 2 COLUMN LAYOUT CSS START */
+
+.twocol-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.music-libs {
+    flex: 7;
+    max-width: calc(100% -90px);
+    padding: 0 45px;
+    margin: 0 auto 100px;
+    max-width: 70%;
+}
+
+.ad-cont {
+    flex: 2;
+    max-width: 30%;
+    background-color: #1e1e1e;
+}
+
+/* SLIDER CSS START */
+
+.songs-section {
+    margin: 50px 0;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.songs-cont {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* justify-content: space-between; */
+}
+
+.song-card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+
+.song-card:hover {
+    .overlay {
+        visibility: visible;
+    }
+}
+
+.image-cont {
+    width: 160px;
+    height: 160px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-cont:hover {
+    filter: brightness(.8);
+}
+
+.song-name {
+    margin-top: 6px;
+    font-size: 16px;
+    color: white;
+}
+
+
+.overlay {
+
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .3);
+    cursor: pointer;
+    background-image: url(https://a10.gaanacdn.com/gn_img/images/play_1621599900.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: calc(50% + 1px) 50%;
+}
+
+/* 2 COLUMN LAYOUT ENDS HERE. */
+
+
+/* FOOTER CSS STARTS HERE. */
+
+/* music player css start here */
+
+.music-player {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #222428;
+    box-shadow: 0 0 4px 0 rgba(0 0 0 /50%);
+    padding: 15px 25px;
+    border-radius: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.song-cover {
+    border-radius: 3px;
+    overflow: hidden;
+    margin-right: 10px;
+
+}
+
+.t_over {
+    font-size: 16px;
+    color: white;
+
+}
+
+.t_over {
+    font-size: 12px;
+    margin-top: 4px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.song-info {
+    flex-direction: column; 
+    overflow: hidden;
+    max-width: 300px;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.time {
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, .8);
+    color: white;
+    font-size: 12px;
+    padding: 6px 16px;
+}
+
+.current-music-playing {
+    align-items: center;
+    flex: 2;
+}
+
+.current-music-playing .svg_color{
+    fill: white;
+}
+
+.music-controls {
+    align-items: center;
+    flex: 3;
+    padding-left: 90px;
+}
+
+.music-controls button,
+.music-quality button {
+    margin: 0 12px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.music-controls .svg_color{
+    fill: white;
+}
+.music-quality .svg_color {
+    fill: white;
+}
+
+.play {
+    background-color: red !important;
+    border-radius: 20px;
+    height: 32px;
+    width: 32px;
+}
+
+.next svg{
+    transform: rotateY(180deg);
+}
+
+.music-quality {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.hidden{
+    display: none !important;
+}
